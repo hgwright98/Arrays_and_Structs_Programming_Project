@@ -1,3 +1,4 @@
+// This program takes the runners.txt in a struct. It then takes the struct and uses it to calculate the total miles ran and the average miles ran. Then it outputs the results in a table for the user to see. 
 #include <iostream>
 #include <iomanip>
 #include <fstream>
