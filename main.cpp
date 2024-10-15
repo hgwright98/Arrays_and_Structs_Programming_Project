@@ -1,3 +1,4 @@
+// This program takes the runners.txt in 2 arrays. It then takes these arrays and uses them to calculate the total miles ran and the average miles ran. Then it outputs the results in a table for the user to see. 
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -33,11 +34,11 @@ void readData(string names[], int miles[][Number_of_Days])
 // This function calculates the total miles run by each runner and the average miles per day
 void calculateTotalsAndAverages(const int miles[][Number_of_Days], int totals[], double averages[]) {
     for (int i = 0; i < Number_of_Runners; ++i) {
-        totals[i] = 0; // Initialize the total miles for the runner
+        totals[i] = 0; // This initializes the total miles for the runner
         for (int j = 0; j < Number_of_Days; ++j) {
-            totals[i] += miles[i][j]; // Add up miles for the total
+            totals[i] += miles[i][j]; // This adds up miles for the total
         }
-        averages[i] = static_cast<double>(totals[i]) / Number_of_Days; // Calculate average miles per day
+        averages[i] = static_cast<double>(totals[i]) / Number_of_Days; // This calculate average miles per day
     }
 }
 
